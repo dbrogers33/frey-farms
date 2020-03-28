@@ -4,7 +4,7 @@ import * as PropTypes from "prop-types";
 
 const h1 = ({ children, textAlign, color }) => {
     return (
-        <H1 textAlign={textAlign}>{children}</H1>
+        <H1 textAlign={textAlign} color={color}>{children}</H1>
     );
 };
 
@@ -19,7 +19,7 @@ h1.defaultProps = {
 };
 
 const H1 = styled.h1`
-    font-family: 'Brandon Grotesque Bold';
+    font-family: 'Brandon Grotesque Medium';
     color: ${props => props.color};
     font-weight: 800;
     font-size: 28px;

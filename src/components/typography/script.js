@@ -4,7 +4,7 @@ import * as PropTypes from "prop-types";
 
 const Script = ({ children, textAlign, color }) => {
     return (
-        <H1 textAlign={textAlign}>{children}</H1>
+        <H1 textAlign={textAlign} color={color}>{children}</H1>
     );
 };
 

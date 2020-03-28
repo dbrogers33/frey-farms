@@ -29,4 +29,5 @@ const H2 = styled.h2`
         font-size: 26px;
     }
 `
+
 export default h2;
