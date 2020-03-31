@@ -41,7 +41,7 @@ export default () => (
 
 const NavBar = styled.div`
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     align-items: center;
     @media (max-width: 800px) {

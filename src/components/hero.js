@@ -35,6 +35,14 @@ const HeroWrapper = styled.div`
 const Copy = styled.div`
     background: #095129;
     box-shadow: inset 0px 0px 250px rgba(0, 0, 0, 0.25);
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        90% 100%,
+        0% 100%
+    );
+    margin-right: -12%;
+    z-index: 1;
     @media (min-width: 800px) {
         position: relative;
     }
