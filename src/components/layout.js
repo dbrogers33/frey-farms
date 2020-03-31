@@ -13,6 +13,7 @@ import 'normalize.css'
 import "./layout.css"
 import GlobalStyle from '../components/global-styles'
 import Navbar from '../components/nav'
+import Footer from '../components/footer'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -33,11 +34,7 @@ const Layout = ({ children }) => {
           <Navbar />
           {children}
           </main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Footer />
       </div>
     </>
   )
