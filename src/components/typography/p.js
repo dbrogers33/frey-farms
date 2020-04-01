@@ -15,18 +15,18 @@ paragraph.propTypes = {
 
 paragraph.defaultProps = {
     textAlign: "left",
-    color: "black"
+    color: "#828282"
 };
 
 const P = styled.p`
     font-family: 'Brandon Grotesque Regular';
     color: ${props => props.color};
-    font-size: 22px;
+    font-size: 20px;
     text-align: ${props => props.textAlign};
     font-display: auto;
     line-height: 1.5em;
     @media (min-width: 1400px) {
-        font-size: 24px;
+        font-size: 22px;
     }
 `
 export default paragraph;

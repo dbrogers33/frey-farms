@@ -1,3 +1,22 @@
+const fbQuery = `
+picture {
+  url
+},
+posts {
+  message,
+  created_time,
+  id,
+  permalink_url,
+  attachments {
+    type,
+    media {
+      image {
+        src
+      }
+    }
+  }
+}`
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -31,6 +50,16 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
+      },
+    },
+    {
+      resolve: `gatsby-source-facebook`,
+      options: {
+        places: [`me`],
+        params: {
+          fields: fbQuery,
+        },
+        key: `EAAYivF1CuzcBAB4soGHjolmzHHXnMVV0Nyq7z2CutDUzIEAFygwsZBUHL9cQPawiqbGxYrYmPMzvqY2AGlHHHgRDmFhcBZCYdZBjQdjafHYDkPkJHldzuCm317ZBMGZAlup7T2pLzjXuZA4ziAhAUMBbfNcXrg8sVzuddG7G10AAZDZD`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
