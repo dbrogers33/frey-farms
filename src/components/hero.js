@@ -29,7 +29,8 @@ const HeroWrapper = styled.div`
     @media (min-width: 800px) {
         display: grid;
         grid-template-columns: 60% 40%;
-        height: 60vh;
+        height: 100vh;
+        max-height: 900px;
     }
 `
 const Copy = styled.div`
